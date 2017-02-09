@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="container">
-            {{ content() }}
+            <?php echo $this->getContent(); ?>
        
        
     </body>

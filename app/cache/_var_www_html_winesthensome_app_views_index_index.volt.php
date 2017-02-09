@@ -1,10 +1,10 @@
 <head>
-{{partial('partials/header')}}
+<?php echo $this->partial('partials/header'); ?>
 
 </head>
 <body>
 
-{{partial('partials/nav')}}
+<?php echo $this->partial('partials/nav'); ?>
 
     <h1>Congratulations!</h1>
 
@@ -16,5 +16,5 @@
 
 </body>
 <footer>
-{{partial('partials/footer')}}
+<?php echo $this->partial('partials/footer'); ?>
 </footer>
