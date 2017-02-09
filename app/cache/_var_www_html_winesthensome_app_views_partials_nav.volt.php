@@ -10,18 +10,13 @@
       <a class="navbar-brand" href="../winesthensome/regions">Growing Regions</a>
     
     </div>
-
- 
     
       <ul class="nav navbar-nav navbar-right">
-     <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        
-        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-      </form>
+
+     <?php echo $this->tag->form(array('signon/show', 'method' => 'post')); ?>
+       <?php echo $this->tag->submitButton(array('Sign In')); ?>
+        <?php echo $this->tag->endForm(); ?>
+
           </ul>
         </li>
       </ul>

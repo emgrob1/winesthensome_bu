@@ -10,8 +10,8 @@ $form->add(
     new Select(
         "type",
         array(
-            "W" => "White",
-            "R" => "Red",
+             "R" => "Red",
+             "W" => "White",
         )
     )
 );
@@ -21,4 +21,3 @@ $form->add(
         "grape_name"
     )
 );
-

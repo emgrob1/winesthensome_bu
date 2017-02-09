@@ -10,18 +10,13 @@
       <a class="navbar-brand" href="../winesthensome/regions">Growing Regions</a>
     
     </div>
-
- 
     
       <ul class="nav navbar-nav navbar-right">
-     <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        
-        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
-      </form>
+
+     {{form('signon/show', 'method': 'post')}}
+       {{ submit_button('Sign In') }}
+        {{ end_form() }}
+
           </ul>
         </li>
       </ul>
