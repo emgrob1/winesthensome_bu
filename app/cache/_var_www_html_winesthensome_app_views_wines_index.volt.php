@@ -1,6 +1,6 @@
 <?php echo $this->partial('partials/nav'); ?>
 
-this is all about wines
+<p>this is all about wines</p>
 
 <div class="panel panel-default">
   <div class="panel-body">

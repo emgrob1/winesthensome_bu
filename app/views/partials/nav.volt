@@ -3,12 +3,13 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
      <div class="navbar-nav">
-      <a class="navbar-brand" href="../winesthensome">Home</a>
-      </div>
-      <a class="navbar-brand" href="../winesthensome/wines">Learn About Wines</a>
-      <a class="navbar-brand" href="../winesthensome/grapes">Grapes</a>
-      <a class="navbar-brand" href="../winesthensome/regions">Growing Regions</a>
+     
+      <a class="navbar-brand" href="/winesthensome">Home</span></a>
     
+      <a class="navbar-brand" href="/winesthensome/wines">Learn About Wines</a>
+      <a class="navbar-brand" href="/winesthensome/grapes">Grapes</a>
+      <a class="navbar-brand" href="/winesthensome/regions">Growing Regions</a>
+      </div>
     </div>
     
       <ul class="nav navbar-nav navbar-right">

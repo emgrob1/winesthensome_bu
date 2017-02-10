@@ -1,0 +1,164 @@
+/* Setting up page colors */
+body{
+	background-color:#ffff99;
+}
+
+p{
+	color:black;
+}
+/* hover boxes over the image */
+#grapes{
+    position: absolute;
+    left: 168px;
+    top: 150px;
+    z-index: 1000;
+    font-weight: bold;
+    height: 153px;
+    width: 1085px;
+   }
+   
+#grapes:hover{
+    position: absolute;
+    left: 168px;
+    top: 150px;
+    z-index: 1000;
+    border: 2px solid #660033;
+    font-weight: bold;
+    height: 153px;
+    width: 1085px;
+   }
+
+#winery{
+    position: absolute;
+    left: 599px;
+    top: 325px;
+    z-index: 1000;  
+    font-weight: bold;
+    height: 95px;
+    width: 250px;
+   }
+
+#winery:hover{
+    position: absolute;
+    left: 599px;
+    top: 325px;
+    z-index: 1000;
+     border: 1px solid #660033;
+    font-weight: bold;
+    height: 95px;
+    width: 250px;
+   }
+/*****************************************/
+/* Overriding the bootstrap */
+.container{
+	background-color:#003300;
+}
+
+.container-fluid{
+	  background-color:#660033;
+	 }
+	 
+.navbar-default .navbar-brand{
+		color:#ffff99;
+}
+
+.navbar-default .navbar-brand:hover{
+		color:#003300;
+}
+
+.panel-default{
+	background-color:black;
+		border:none;
+}
+
+.navbar-default{
+	border:none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffff99;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    top:400px;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Grape Modal */
+
+
+/* The Modal (background) */
+.grapemodal-content {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.grapemodal-content {
+    background-color: #ffff99;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    top:200px;
+    width: 30%;
+}
+
+/* The Close Button */
+.grapeclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.grapeclose:hover,
+.grapeclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+	list-style-type:none;
+}
