@@ -24,9 +24,9 @@
     <span class="close">&times;</span>
     <p>Learn about wines</p>
     <ul>
-    <li><a href="/winesthensome/wines">Tasting Wines</a></li>
-    <li><a href="#">Pairing</a></li>
-    <li><a href="#">How Wine is Made</a></li>
+    <li><a href="/winesthensome/tasting">Tasting Wines</a></li>
+    <li><a href="/winesthensome/pairing">Pairing</a></li>
+    <li><a href="/winesthensome/making_wine">How Wine is Made</a></li>
  <li><a href="/winesthensome/regions">Growing Regions of The World</a></li>
     </ul>
     <h5>To exit click the X upper right or any where outside this box</h5>
