@@ -1,6 +1,6 @@
 <?php
 
-class CreategrapesController extends \Phalcon\Mvc\Controller
+class CreatefoodController extends \Phalcon\Mvc\Controller
 {
 
     public function indexAction()
@@ -9,21 +9,20 @@ class CreategrapesController extends \Phalcon\Mvc\Controller
     }
 
 	public function saveAction(){
-		$grapes = new Grapes();
+		$food = new Food();
 		
-		$success = $grapes->save(
+		$success = $food->save(
 		$this->request->getPost(),
 		array(
-		"type",
-		"grape_name",
+		"food_name",
 		));
 				if($success) {
 					//echo "Theater Saved";
 					$this->view->disable();
-					header('location:/winesthensome/createGrapes');
+					header('location:/winesthensome/createFood');
 						
 				} else {
-					echo "Grapes NOT saved";
+					echo "Food NOT saved";
 					$message = $theater->getMessages();
 					 foreach ($messsages as $message) {
 					 	echo $message->getMessages(), "<br/>";

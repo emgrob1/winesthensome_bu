@@ -1,25 +1,19 @@
 <?php
 
-class Grapes extends \Phalcon\Mvc\Model
+class Food extends \Phalcon\Mvc\Model
 {
 
     /**
      *
      * @var integer
      */
-    public $id;
+    public $food_id;
 
     /**
      *
      * @var string
      */
-    public $type;
-
-    /**
-     *
-     * @var string
-     */
-    public $grape_name;
+    public $food_name;
 
     /**
      * Returns table name mapped in the model.
@@ -28,14 +22,14 @@ class Grapes extends \Phalcon\Mvc\Model
      */
     public function getSource()
     {
-        return 'grapes';
+        return 'food';
     }
 
     /**
      * Allows to query a set of records that match the specified conditions
      *
      * @param mixed $parameters
-     * @return Grapes[]
+     * @return Food[]
      */
     public static function find($parameters = null)
     {
@@ -46,12 +40,25 @@ class Grapes extends \Phalcon\Mvc\Model
      * Allows to query the first record that match the specified conditions
      *
      * @param mixed $parameters
-     * @return Grapes
+     * @return Food
      */
     public static function findFirst($parameters = null)
     {
         return parent::findFirst($parameters);
     }
-	
+
+	public static function getFood(){
+		$foods = Food::find(
+    array(
+        "order" => "food_name",
+    ));
+	return $foods;
+	}
+
+	public static function showPairings(){
 		
+		
+		
+		
+	}
 }

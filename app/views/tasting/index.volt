@@ -5,7 +5,7 @@
   <div class="panel-body">
     <h3>Tasting Wines</h3>
     
-    <h4>Wines tasting is a very subjective because of the individuals taste will ultimately decide if this is a good wine.</h4>
+    <h4>Wines tasting is very subjective because of the individual's taste will ultimately decide if this is a good wine.</h4>
     <p>Here are a few pointers designed to making the tasting an enjoyable experience</p>
     <ul>
     
@@ -44,4 +44,3 @@
   </div>
 </div>
  
-{{partial('partials/footer')}}
