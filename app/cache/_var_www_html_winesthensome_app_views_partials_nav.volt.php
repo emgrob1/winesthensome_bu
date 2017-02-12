@@ -6,7 +6,14 @@
      
       <a class="navbar-brand" href="/winesthensome">Home</span></a>
     
-      <a class="navbar-brand" href="/winesthensome/wines">Learn About Wines</a>
+       <div class="dropdown">
+  <button onclick="myFunction()" class="navbar-brand dropbtn">Learn About Wines</button>
+  <div id="myDropdown" class="dropdown-content">
+        <li><a href="/winesthensome/tasting">Tasting Wines</a></li>
+    <li><a href="/winesthensome/pairing">Pairing</a></li>
+    <li><a href="/winesthensome/making_wine">How Wine is Made</a></li>
+  </div>
+</div>
       <a class="navbar-brand" href="/winesthensome/grapes">Grapes</a>
       <a class="navbar-brand" href="/winesthensome/regions">Growing Regions</a>
       </div>
