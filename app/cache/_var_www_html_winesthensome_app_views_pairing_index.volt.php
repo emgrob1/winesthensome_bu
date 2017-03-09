@@ -13,17 +13,20 @@
   <th>Wine that comliments your food</th>
   <tbody>
   <tr>
+  	
   <td>
-
-
-  <select id='selectWine' class="select-chosen" type="text" >
+  <select id='selectWine' class="select-chosen" type="text">
   <?php foreach ($foodSelect as $foodSelects) { ?>
-<option value="<?php echo $foodSelects->food_id; ?>"><?php echo $foodSelects->food_name; ?><option>  
+<option value="<?php echo $foodSelects->food_id; ?>"><?php echo $foodSelects->food_name; ?><option>
   <?php } ?>	
 </select>
   </td>
   <td>
+  
   Show Results
+ <?php foreach ($posts as $post) { ?>
+<?php echo $post->grape_name; ?>
+  <?php } ?>
   </td>
   
   

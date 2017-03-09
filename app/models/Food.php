@@ -1,5 +1,7 @@
 <?php
 
+use Phalcon\Mvc\Model\Query;
+
 class Food extends \Phalcon\Mvc\Model
 {
 
@@ -15,11 +17,21 @@ class Food extends \Phalcon\Mvc\Model
      */
     public $food_name;
 
+
+
+	public function initialize(){
+		  $this->hasMany('id', 'Grapes', 'food_id', NULL);
+	}
+
+
     /**
      * Returns table name mapped in the model.
      *
      * @return string
      */
+     
+     
+     
     public function getSource()
     {
         return 'food';
@@ -51,14 +63,22 @@ class Food extends \Phalcon\Mvc\Model
 		$foods = Food::find(
     array(
         "order" => "food_name",
+		"emptyValue" => "Select ...",
     ));
 	return $foods;
 	}
 
 	public static function showPairings(){
 		
+		$resultset = $this->modelsManager->createBuilder()
+   ->from('Food')
+   ->join('Grapes.grape_name')
+   ->limit(20)
+   ->orderBy('Food.food_name')
+   ->getQuery()
+   ->execute();
 		
 		
-		
+		return $resultset;
 	}
-}
+	}

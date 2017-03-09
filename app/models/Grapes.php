@@ -31,6 +31,16 @@ class Grapes extends \Phalcon\Mvc\Model
         return 'grapes';
     }
 
+
+/**
+     * Initialize method for model.
+     */
+    public function initialize()
+    {
+        $this->belongsTo('food_id', 'Food', 'id', NULL);
+      
+    }
+
     /**
      * Allows to query a set of records that match the specified conditions
      *

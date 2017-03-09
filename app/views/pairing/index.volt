@@ -13,17 +13,20 @@
   <th>Wine that comliments your food</th>
   <tbody>
   <tr>
+  	
   <td>
-
-
-  <select id='selectWine' class="select-chosen" type="text" >
+  <select id='selectWine' class="select-chosen" type="text">
   {% for foodSelects in foodSelect %}
-<option value="{{foodSelects.food_id}}">{{foodSelects.food_name}}<option>  
+<option value="{{foodSelects.food_id}}">{{foodSelects.food_name}}<option>
   {% endfor %}	
 </select>
   </td>
   <td>
+  
   Show Results
+ {% for post in posts %}
+{{post.grape_name}}
+  {% endfor %}
   </td>
   
   
